@@ -16,6 +16,14 @@ let mutations = {
         }
         state.user_pwd = compile.Encrypt(pwd);
         localStorage.setItem('user_pwd', compile.Encrypt(pwd));
+    },
+    getValue(state, num) {
+        var items = state.prod.map(ele => {
+            return {
+                age: ele.age += num
+            } 
+        })
+        return items;
     }
-};
+}
 export default mutations;

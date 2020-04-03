@@ -28,3 +28,7 @@ export let getAll = () => {
 export let userLogin = (obj) => {
     return axios.get("/userLogin", { params: obj })
 }
+// table表格获取
+export let getTable=(obj)=>{
+    return axios.get("/getTable",{params:obj})
+ }

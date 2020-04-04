@@ -25,6 +25,15 @@ Vue.use(VueLazyload, {
 })
 Vue.config.productionTip = false
 
+
+Vue.prototype.fn = function () {
+
+  alert("main")
+
+};
+
+
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

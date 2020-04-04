@@ -29,6 +29,10 @@ export let userLogin = (obj) => {
     return axios.get("/userLogin", { params: obj })
 }
 // table表格获取
-export let getTable=(obj)=>{
-    return axios.get("/getTable",{params:obj})
- }
+export let getTable = (obj) => {
+    return axios.get("/getTable", { params: obj })
+}
+// 获取实时刷新数据
+export let getShishishuxin = () => {
+    return axios.get("/getShuaXin")
+}

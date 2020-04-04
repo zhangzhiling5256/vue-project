@@ -18,7 +18,12 @@
 import Tab from "./base/Tab";
 export default {
   name: "App",
-  components: { Tab }
+  components: { Tab },
+  methods:{
+    fn(){
+      alert("app")
+    }
+  }
 };
 </script>
 

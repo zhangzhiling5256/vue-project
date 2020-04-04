@@ -20,6 +20,7 @@
     <el-checkbox-group v-model="checkedCities" @change="handleCheckedCitiesChange">
       <el-checkbox v-for="city in cities" :label="city" :key="city">{{city}}</el-checkbox>
     </el-checkbox-group>
+    <Button type="success" @click="fn">点击</Button>
   </div>
 </template>
 <script>

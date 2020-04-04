@@ -20,11 +20,6 @@
     <el-checkbox-group v-model="checkedCities" @change="handleCheckedCitiesChange">
       <el-checkbox v-for="city in cities" :label="city" :key="city">{{city}}</el-checkbox>
     </el-checkbox-group>
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    checkall{{checkAll}}
   </div>
 </template>
 <script>

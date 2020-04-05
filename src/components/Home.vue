@@ -75,6 +75,7 @@ export default {
     }
   },
   destroyed() {
+    this.fn();
     clearTimeout(this.timer);
   },
   computed: {},

@@ -36,3 +36,7 @@ export let getTable = (obj) => {
 export let getShishishuxin = () => {
     return axios.get("/getShuaXin")
 }
+// 改变table中当前行的名字
+export let modifyName = (obj) => {
+    return axios.get("modifyname", { params: obj })
+}
